@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
@@ -5,6 +6,8 @@ export default function Document() {
     <Html lang="en" className="h-full overflow-hidden">
       <Head />
       <body className="h-full overflow-auto flex flex-col">
+        <Analytics />
+
         <div className="flex flex-grow flex-col">
           <Main />
         </div>
