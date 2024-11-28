@@ -4,6 +4,8 @@
 
 This Blog Application allows users to create, edit, and manage posts. Users can also like posts, view detailed articles, and manage user information. The application is built using modern web technologies including React, Ant Design, and React Query. 
 
+The live version of this project can be accessed here: https://the-blog-yovi.vercel.app/
+
 ## Features
 
 - **User Authentication**: Authenticate users using api token from Go REST (https://gorest.co.in/my-account/access-tokens).
