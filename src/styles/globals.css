@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --text: #051f33;
+    --background: #ebebeb;
+    --primary: #4a8ade;
+    --secondary: #d9e1ed;
+    --accent: #4b8add;
+  }
+  .dark {
+    --text: #cce6fa;
+    --background: #141414;
+    --primary: #2161b5;
+    --secondary: #121a26;
+    --accent: #2261b4;
+  }
+}
+.heartButton {
+  border: none;
+  padding: 0;
+  padding: 0 4px;
+  border-radius: 999px;
+  height: auto;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.heartButton:hover {
+  background: none;
+}
+
+.heartButton .anticon {
+  font-size: 24px;
+}
+
+.heartFilled {
+  color: #ff4d4f;
+}
+
+.heartOutlined {
+  color: var(--text);
+}
+
+.heartButton:hover .heartOutlined {
+  color: #ff4d4f;
+}
