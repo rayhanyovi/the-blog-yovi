@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { QueryClient, QueryClientProvider } from "react-query";
 import type { AppProps } from "next/app";
 import { ConfigProvider, theme } from "antd";
@@ -28,6 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
             algorithm: isDark ? theme.darkAlgorithm : theme.defaultAlgorithm,
           }}
         >
+          <Analytics />
           <Component {...pageProps} />
         </ConfigProvider>
       </ThemeContext.Provider>
